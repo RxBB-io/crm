@@ -1,10 +1,10 @@
 app_name = "crm"
-app_title = "Frappe CRM"
+app_title = "Frappe CRM"  # Change this to your custom title if needed
 app_publisher = "Frappe Technologies Pvt. Ltd."
 app_description = "Kick-ass Open Source CRM"
 app_email = "shariq@frappe.io"
 app_license = "AGPLv3"
-app_icon_url = "/assets/crm/images/logo.svg"
+app_icon_url = "/assets/crm/images/custom-logo.svg"  # Your custom logo
 app_icon_title = "CRM"
 app_icon_route = "/crm"
 
@@ -15,7 +15,7 @@ app_icon_route = "/crm"
 add_to_apps_screen = [
 	{
 		"name": "crm",
-		"logo": "/assets/crm/images/logo.svg",
+		"logo": "/assets/crm/images/custom-logo.svg",  # Your custom logo
 		"title": "CRM",
 		"route": "/crm",
 		"has_permission": "crm.api.check_app_permission",
@@ -280,21 +280,7 @@ standard_dropdown_items = [
 		"route": "#",
 		"is_standard": 1,
 	},
-	{
-		"name1": "login_to_fc",
-		"label": "Login to Frappe Cloud",
-		"type": "Route",
-		"route": "#",
-		"is_standard": 1,
-	},
-	{
-		"name1": "about",
-		"label": "About",
-		"type": "Route",
-		"icon": "info",
-		"route": "#",
-		"is_standard": 1,
-	},
+	
 	{
 		"name1": "separator",
 		"label": "",
@@ -310,3 +296,4 @@ standard_dropdown_items = [
 		"is_standard": 1,
 	},
 ]
+fixtures = ["CRM View Settings", "FCRM Settings"]	

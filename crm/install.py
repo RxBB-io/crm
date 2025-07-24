@@ -22,6 +22,7 @@ def after_install(force=False):
 	add_default_lead_sources()
 	add_default_lost_reasons()
 	add_standard_dropdown_items()
+	setup_default_fcrm_settings()
 	add_default_scripts()
 	frappe.db.commit()
 
@@ -388,6 +389,23 @@ def add_default_lost_reasons():
 		doc.lost_reason = reason["reason"]
 		doc.description = reason["description"]
 		doc.insert()
+
+
+def setup_default_fcrm_settings():
+	"""Setup default FCRM Settings with RxBB Reach branding"""
+	settings = frappe.get_single("FCRM Settings")
+	
+	# Set RxBB Reach branding if not already configured
+	if not settings.brand_name:
+		settings.brand_name = "RxBB Reach"
+	
+	if not settings.brand_logo:
+		settings.brand_logo = "/images/RxBB-Reach-Favicon.svg"
+	
+	if not settings.favicon:
+		settings.favicon = "/images/RxBB-Reach-Favicon.svg"
+	
+	settings.save()
 
 
 def add_standard_dropdown_items():

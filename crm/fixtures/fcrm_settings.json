@@ -1,0 +1,42 @@
+[
+    {
+        "doctype": "FCRM Settings",
+        "name": "FCRM Settings",
+        "brand_name": "RxBB Reach",
+        "brand_logo": "/images/RxBB-Reach-Favicon.svg",
+        "favicon": "/images/RxBB-Reach-Favicon.svg",
+        "enable_forecasting": 0,
+        "dropdown_items": [
+            {
+                "type": "Route",
+                "label": "Settings",
+                "route": "#",
+                "icon": "settings",
+                "is_standard": 1,
+                "name1": "settings",
+                "hidden": 0,
+                "open_in_new_window": 0
+            },
+            {
+                "type": "Route",
+                "label": "About",
+                "route": "#",
+                "icon": "info",
+                "is_standard": 1,
+                "name1": "about",
+                "hidden": 0,
+                "open_in_new_window": 0
+            },
+            {
+                "type": "Route",
+                "label": "Log out",
+                "route": "#",
+                "icon": "log-out",
+                "is_standard": 1,
+                "name1": "logout",
+                "hidden": 0,
+                "open_in_new_window": 0
+            }
+        ]
+    }
+] 
