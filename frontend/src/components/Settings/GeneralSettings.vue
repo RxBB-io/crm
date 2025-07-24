@@ -46,7 +46,7 @@
             class="flex items-center justify-center rounded border border-outline-gray-modals px-10 py-2"
           >
             <img
-              :src="settings.doc?.brand_logo || '/assets/crm/images/logo.png'"
+              :src="settings.doc?.brand_logo || '/images/RxBB-Reach-Favicon.svg'"
               alt="Logo"
               class="size-8 rounded"
             />
@@ -81,7 +81,7 @@
             class="flex items-center justify-center rounded border border-outline-gray-modals px-10 py-2"
           >
             <img
-              :src="settings.doc?.favicon || '/assets/crm/images/logo.png'"
+              :src="settings.doc?.favicon || '/images/RxBB-Reach-Favicon.svg'"
               alt="Favicon"
               class="size-8 rounded"
             />
