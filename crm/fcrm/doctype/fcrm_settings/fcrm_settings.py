@@ -21,7 +21,15 @@ class FCRMSettings(Document):
 	def do_not_allow_to_delete_if_standard(self):
 		if not self.has_value_changed("dropdown_items"):
 			return
-		old_items = self.get_doc_before_save().get("dropdown_items")
+		
+		old_doc = self.get_doc_before_save()
+		if not old_doc:
+			return  # No previous document exists, skip validation
+			
+		old_items = old_doc.get("dropdown_items")
+		if not old_items:
+			return  # No previous dropdown items exist, skip validation
+			
 		standard_new_items = [d.name1 for d in self.dropdown_items if d.is_standard]
 		standard_old_items = [d.name1 for d in old_items if d.is_standard]
 		deleted_standard_items = set(standard_old_items) - set(standard_new_items)
