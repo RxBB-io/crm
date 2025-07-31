@@ -1,11 +1,11 @@
 app_name = "crm"
-app_title = "Frappe CRM"  # Change this to your custom title if needed
+app_title = "RxBB Reach"  # Updated to RxBB Reach title
 app_publisher = "Frappe Technologies Pvt. Ltd."
 app_description = "Kick-ass Open Source CRM"
 app_email = "shariq@frappe.io"
 app_license = "AGPLv3"
-app_icon_url = "/assets/crm/images/custom-logo.svg"  # Your custom logo
-app_icon_title = "CRM"
+app_icon_url = "/assets/crm/images/RxBB-Reach-Favicon.svg"  # Updated to RxBB favicon
+app_icon_title = "RxBB Reach"
 app_icon_route = "/crm"
 
 # Apps
@@ -15,8 +15,8 @@ app_icon_route = "/crm"
 add_to_apps_screen = [
 	{
 		"name": "crm",
-		"logo": "/assets/crm/images/custom-logo.svg",  # Your custom logo
-		"title": "CRM",
+		"logo": "/assets/crm/images/RxBB-Reach-Favicon.svg",  # Updated to RxBB favicon
+		"title": "RxBB Reach",
 		"route": "/crm",
 		"has_permission": "crm.api.check_app_permission",
 	}

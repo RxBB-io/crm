@@ -1,42 +1,79 @@
 [
-    {
-        "doctype": "FCRM Settings",
-        "name": "FCRM Settings",
-        "brand_name": "RxBB Reach",
-        "brand_logo": "/images/RxBB-Reach-Favicon.svg",
-        "favicon": "/images/RxBB-Reach-Favicon.svg",
-        "enable_forecasting": 0,
-        "dropdown_items": [
-            {
-                "type": "Route",
-                "label": "Settings",
-                "route": "#",
-                "icon": "settings",
-                "is_standard": 1,
-                "name1": "settings",
-                "hidden": 0,
-                "open_in_new_window": 0
-            },
-            {
-                "type": "Route",
-                "label": "About",
-                "route": "#",
-                "icon": "info",
-                "is_standard": 1,
-                "name1": "about",
-                "hidden": 0,
-                "open_in_new_window": 0
-            },
-            {
-                "type": "Route",
-                "label": "Log out",
-                "route": "#",
-                "icon": "log-out",
-                "is_standard": 1,
-                "name1": "logout",
-                "hidden": 0,
-                "open_in_new_window": 0
-            }
-        ]
-    }
-] 
+ {
+  "brand_logo": "/assets/crm/images/RxBB-Reach-Favicon.svg",
+  "brand_name": "RxBB Reach",
+  "docstatus": 0,
+  "doctype": "FCRM Settings",
+  "dropdown_items": [
+   {
+    "hidden": 0,
+    "icon": null,
+    "is_standard": 1,
+    "label": "Apps",
+    "name1": "app_selector",
+    "open_in_new_window": 1,
+    "parent": "FCRM Settings",
+    "parentfield": "dropdown_items",
+    "parenttype": "FCRM Settings",
+    "route": "#",
+    "type": "Route"
+   },
+   {
+    "hidden": 0,
+    "icon": "moon",
+    "is_standard": 1,
+    "label": "Toggle theme",
+    "name1": "toggle_theme",
+    "open_in_new_window": 1,
+    "parent": "FCRM Settings",
+    "parentfield": "dropdown_items",
+    "parenttype": "FCRM Settings",
+    "route": "#",
+    "type": "Route"
+   },
+   {
+    "hidden": 0,
+    "icon": "settings",
+    "is_standard": 1,
+    "label": "Settings",
+    "name1": "settings",
+    "open_in_new_window": 0,
+    "parent": "FCRM Settings",
+    "parentfield": "dropdown_items",
+    "parenttype": "FCRM Settings",
+    "route": "#",
+    "type": "Route"
+   },
+   {
+    "hidden": 0,
+    "icon": null,
+    "is_standard": 1,
+    "label": "",
+    "name1": "separator",
+    "open_in_new_window": 1,
+    "parent": "FCRM Settings",
+    "parentfield": "dropdown_items",
+    "parenttype": "FCRM Settings",
+    "route": null,
+    "type": "Separator"
+   },
+   {
+    "hidden": 0,
+    "icon": "log-out",
+    "is_standard": 1,
+    "label": "Log out",
+    "name1": "logout",
+    "open_in_new_window": 0,
+    "parent": "FCRM Settings",
+    "parentfield": "dropdown_items",
+    "parenttype": "FCRM Settings",
+    "route": "#",
+    "type": "Route"
+   }
+  ],
+  "enable_forecasting": 0,
+  "favicon": "/assets/crm/images/RxBB-Reach-Favicon.svg",
+  "modified": "2025-07-30 22:14:20.198146",
+  "name": "FCRM Settings"
+ }
+]
